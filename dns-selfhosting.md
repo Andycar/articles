@@ -88,8 +88,8 @@ DNS.
 соответствующую директорию, после чего изменим владельца файла на `root`:
 
 ```
-$ wget https://github.com/coredns/coredns/releases/download/v1.8.6/coredns_1.8.6_linux_amd64.tgz
-$ tar -zxvf coredns_1.8.6_linux_amd64.tgz
+$ wget https://github.com/coredns/coredns/releases/download/v1.12.1/coredns_1.12.1_linux_amd64.tgz
+$ tar -zxvf coredns_1.12.1_linux_amd64.tgz
 $ sudo mv coredns /usr/bin/
 $ sudo chown root:root /usr/bin/coredns
 ```
