@@ -1,2 +1,2 @@
 # articles
-dns-selfhosting.md
+[DNS server self-hosting](./dns-selfhosting.md)
