@@ -312,7 +312,12 @@ DoH в браузере Firefox ознакомьтесь с
 [официальной инструкцией](https://support.mozilla.org/ru/kb/dns-cherez-https-v-firefox#w_vkliuchenie-i-otkliuchenie-dns-cherez-https-vruchnuiu).
 Поддержка DoH на уровне ОС заявлена в Windows 11, но на момент написания этой
 статьи нами не тестировалась. Помимо этого, DoT поддерживают некоторые роутеры.
-
+**UPD** Ubuntu 24.04 (VPS)
+Файл   /etc/resolv.conf
+```
+nameserver 127.0.0.53
+search tech0.ru
+```
 Далее мы детально опишем настройку DoT на ПК с ОС Debian 11. В качестве клиента
 будет использоваться сервис `systemd-resolved`. С помощью команды `systemctl
 status systemd-resolved` вы можете убедиться, что этот сервис присутствует в
