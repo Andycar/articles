@@ -3,4 +3,4 @@
 
 [autoXRAY on small VPS, no GUI](./autoXRAY.md)
 
-[XRAY 3x-GUI](.3x-UI_XRAY.md)
+[XRAY 3x-GUI](./3x-UI_XRAY.md)
