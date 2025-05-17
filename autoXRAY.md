@@ -1,4 +1,5 @@
 # autoXRAY
+https://github.com/xVRVx/autoXRAY
 Bash-скрипт для автоматической настройки ядра [Xray](https://github.com/XTLS/Xray-core). Предназначен для быстрого и удобного получения актуальных конфигураций ВПН для семейного использования.
 
 Рекомендуемая система: Debian 12. Также поддерживаются Debian 10, Debian 11 и Ubuntu 24.
