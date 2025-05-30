@@ -273,8 +273,26 @@ $ whois 83.220.232.1
 $ sudo ufw allow from 83.220.232.0/22 to any port 443 comment "DoH range 1"
 $ sudo ufw allow from 83.220.232.0/22 to any port 853 comment "DoT range 1"
 ```
+Ну, и само собой файерволл должен пускать извне все TCP-соединения по порту 443 и 853:
+```
+$:/etc/coredns# ufw status numbered
+Status: active
 
+     To                         Action      From
+     --                         ------      ----
+ 1] 443                        ALLOW IN    94.141.161.0/24            # DoH range 1
+ 2] 853                        ALLOW IN    94.141.161.0/24            # DoT range 1
+ 3] 443                        ALLOW IN    Anywhere
+ 4] 853                        ALLOW IN    Anywhere
+ 5] 443 (v6)                   ALLOW IN    Anywhere (v6)
+ 6] 853 (v6)                   ALLOW IN    Anywhere (v6)
 Запустим DNS-сервер командой:
+```
+Если нет таких пунктов, то включаем в ufw входящие соединения на портах 443 и 853:
+```
+ufw allow 853
+ufw allow 443
+```
 
 ```
 $ sudo systemctl enable --now coredns
