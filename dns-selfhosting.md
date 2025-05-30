@@ -293,7 +293,7 @@ Status: active
 ufw allow 853
 ufw allow 443
 ```
-
+Включим и сразу запусти службу coredns:
 ```
 $ sudo systemctl enable --now coredns
 ```
