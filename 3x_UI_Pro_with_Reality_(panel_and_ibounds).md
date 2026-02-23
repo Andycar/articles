@@ -1,4 +1,4 @@
-**3X-UI-pro with REALITY (panel and inbounds 3X-UI-pro with REALITY (panel and inbounds on port 443)on port 443)**
+**3X-UI-pro with REALITY (panel and inbounds on port 443)**
 
 В прошлый раз, вот тут (https://scarce-hole-1e2.notion.site/1081666462e48069b35edf17d22894dc?pvs=25), я рассказывал как установить и настроить 3x-ui с обвязкой что бы все работало на порту 443, еще и с фейковым сайтом вместе. После этого я решил немного модернизировать этот скрипт, что бы поддерживались не только Trojan и Vless поверх вебсокетов но еще и REALITY с доменом маскировки на вашем же сервере 
 
